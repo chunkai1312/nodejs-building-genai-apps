@@ -1,0 +1,27 @@
+{
+  "name": "rag-agent",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "start": "node dist/index.js",
+    "build": "tsc",
+    "ingest": "tsx src/ingest.ts"
+  },
+  "dependencies": {
+    "@langchain/community": "^1.0.4",
+    "@langchain/core": "^1.0.3",
+    "@langchain/openai": "^1.0.0",
+    "@langchain/qdrant": "^1.0.0",
+    "@langchain/textsplitters": "^1.0.0",
+    "dotenv": "^17.2.3",
+    "langchain": "^1.0.3",
+    "pdf-parse": "^1.1.4",
+    "zod": "^4.1.12"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.0",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3"
+  }
+}
